@@ -104,6 +104,11 @@ namespace Nest.Resolvers.Writers {
                 this._jsonWriter.WritePropertyName("omit_term_freq_and_positions");
                 this._jsonWriter.WriteValue("true");
             }
+            if (att.IndexOptions != null)
+            {
+                this._jsonWriter.WritePropertyName("index_options");
+                this._jsonWriter.WriteValue(att.IndexOptions.ToString());
+            }
             if (!att.IncludeInAll)
             {
                 this._jsonWriter.WritePropertyName("include_in_all");

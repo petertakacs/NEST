@@ -19,6 +19,7 @@
 
         bool OmitNorms { get; set; }
         bool OmitTermFrequencyAndPositions { get; set; }
+        IndexOptions IndexOptions { get; set; }
         bool IncludeInAll { get; set; }
         bool Store { get; set; }
 

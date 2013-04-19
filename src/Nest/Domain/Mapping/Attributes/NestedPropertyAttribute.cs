@@ -18,6 +18,7 @@ namespace Nest
         public string NullValue { get; set; }
         public bool OmitNorms { get; set; }
         public bool OmitTermFrequencyAndPositions { get; set; }
+        public IndexOptions IndexOptions { get; set; }
         public bool IncludeInAll { get; set; }
         public bool Store { get; set; }
         public NumericType NumericType { get; set; }
